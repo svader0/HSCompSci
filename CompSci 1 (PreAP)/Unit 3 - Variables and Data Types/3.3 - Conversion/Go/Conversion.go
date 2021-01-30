@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var inch = 2.54
+    var inch = 2.54
     var yard = 0.9144
     var mile = 1.609
     var centimeter = 0.3937
