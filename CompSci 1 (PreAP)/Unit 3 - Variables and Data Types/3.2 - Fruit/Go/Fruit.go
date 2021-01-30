@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var apples = 35
+    var apples = 35
     var oranges = 22
     var peaches = 18
     var grapes = 10
