@@ -5,7 +5,7 @@
 
 using std::vector;
 
-void printMatrix(vector<vector<int>> &matrix);
+void printMatrix(vector<vector<int>> & matrix);
 
 
 int main() {
@@ -53,7 +53,7 @@ int main() {
 	return 0;
 }
 
-void printMatrix(vector<vector<int>> &matrix) // prints using reference to vector arr
+void printMatrix(vector<vector<int>> & matrix) // prints using reference to vector arr
 {
 	for (int r = 0; r < matrix.size(); r++) 
 	{
