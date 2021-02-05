@@ -13,7 +13,7 @@ class APLine {
 		calculates and returns the slope of the equation using standard form.
 	*/
 	public float getSlope() {
-		return ((a - (a * 2)) / b);
+		return (((float)(-a)) / ((float)b));
 	}
 
 	/*
