@@ -33,9 +33,9 @@ public class GrayImage
 			}
 		}
 		return num;
-    }
+    	}
 
-    /*******************/
+    	/*******************/
 	/* Part (B)        */
 	/*******************/
 	/** Processes this image in row-major order and decreases the value of each pixel at
@@ -61,13 +61,13 @@ public class GrayImage
 				}
 			}
 		}
-    }
+    	}
 
-    public String toString()
-    {
-    	String str = "";
+    	public String toString()
+    	{
+    		String str = "";
 
-    	for(int r = 0; r < pixelValues.length; r++)
+    		for(int r = 0; r < pixelValues.length; r++)
 		{
 			for(int c = 0; c < pixelValues[r].length; c++)
 			{
@@ -76,6 +76,6 @@ public class GrayImage
 			str += "\n";
 		}
 
-    	return str;
-    }
+    		return str;
+    	}
 }
