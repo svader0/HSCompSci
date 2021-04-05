@@ -61,7 +61,7 @@ public class GrayImage
 				}
 			}
 		}
-    }
+	}
 
     public String toString()
     {
