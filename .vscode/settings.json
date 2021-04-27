@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "IB HL 1/Unit 9 - Two-Dimensional Arrays/AP FR ArrayTester/Java",
         "IB HL 1/Unit 10 - ArrayList/AP FR StudentAnswerSheet/Java",
         "IB HL 1/Unit 10 - ArrayList/AP FR CookieOrder/Java",
-        "IB HL 1/Unit 9 - Two-Dimensional Arrays/AP FR ArrayTester/Java"
+        "IB HL 1/Unit 11 - Inheritance/11.1 - CombinationLock/Java"
     ]
 }
