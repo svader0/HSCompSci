@@ -15,6 +15,6 @@ public class RaceHorseTest
 	
     public static void main(String[] args)
     {
-        RaceHorseTest app = new RaceHorseTest();
+        new RaceHorseTest();
     }
 }

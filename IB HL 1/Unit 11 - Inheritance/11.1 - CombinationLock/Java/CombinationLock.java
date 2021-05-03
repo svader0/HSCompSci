@@ -35,6 +35,7 @@ public class CombinationLock extends Lock{
         {
             super.open();
         }
+        keyboard.close();
     }
 
     public String toString() 

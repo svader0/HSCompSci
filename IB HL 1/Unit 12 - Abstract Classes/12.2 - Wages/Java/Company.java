@@ -28,7 +28,7 @@ public class Company
 			System.out.println();
 			System.out.print("Make Selection -->");
 			int sel = keyboard.nextInt();
-			String dummy = keyboard.nextLine();
+			keyboard.nextLine();
 			System.out.println();
 			System.out.print("Enter Employee Name -->");
 			String name = keyboard.nextLine();

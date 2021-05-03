@@ -50,12 +50,11 @@ public class SportsPhotography
            System.out.println();     
        }
        while(true);
-       
     }
     
     public static void main(String[] args)
     {
-        SportsPhotography app = new SportsPhotography();
+        new SportsPhotography();
         
     }
 }

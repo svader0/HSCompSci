@@ -12,6 +12,6 @@ public class Athletics
 
     public static void main(String[] args)
     {
-        Athletics app = new Athletics();
+        new Athletics();
     }
 }

@@ -51,11 +51,12 @@ public class VacationPlanner
                 System.out.println();        
             }           
         }
-        while(pack < 4);     
+        while(pack < 4);  
+        keyboard.close();   
     }
 	
     public static void main(String[] args)
     {
-        VacationPlanner app = new VacationPlanner();
+        new VacationPlanner();
     }
 }

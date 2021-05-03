@@ -39,6 +39,7 @@ public class Charity
 			System.out.println();
 		}
 		while(sel.equalsIgnoreCase("y"));
+		keyboard.close();
 	}
 	
 	public void printSummary()

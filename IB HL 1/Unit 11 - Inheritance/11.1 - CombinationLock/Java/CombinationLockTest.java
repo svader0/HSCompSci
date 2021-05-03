@@ -30,5 +30,6 @@ public class CombinationLockTest
        myLock.open();
        System.out.println(myLock);
        myLock.close();
+       keyboard.close();
     }
 }

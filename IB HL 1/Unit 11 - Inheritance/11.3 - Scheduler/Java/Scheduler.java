@@ -15,6 +15,6 @@ public class Scheduler
     
     public static void main(String[] args)
     {
-        Scheduler app = new Scheduler();
+        new Scheduler();
     }
 }
