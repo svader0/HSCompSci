@@ -8,7 +8,14 @@ public class MultipleChoice implements Question
     private String choiceD;
     private String answer;
 
-    public MultipleChoice (String question, String choiceA, String choiceB, String choiceC, String choiceD, String answer) 
+    public MultipleChoice (
+        String question, 
+        String choiceA, 
+        String choiceB, 
+        String choiceC, 
+        String choiceD, 
+        String answer
+        ) 
     {
         this.question = question;
         this.choiceA = choiceA;
