@@ -2,11 +2,11 @@ import java.util.*;
 
 public class SportsPhotography
 {
+    static Scanner keyboard = new Scanner(System.in);
     private StarterPacket photoPacket;
     
     public SportsPhotography()
     {
-       Scanner keyboard = new Scanner(System.in);
        int packet = 0;
        
        do
@@ -55,6 +55,6 @@ public class SportsPhotography
     public static void main(String[] args)
     {
         new SportsPhotography();
-        
+        keyboard.close();
     }
 }

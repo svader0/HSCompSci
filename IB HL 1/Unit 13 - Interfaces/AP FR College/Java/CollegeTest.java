@@ -33,6 +33,6 @@ public class CollegeTest
 
     public static void main(String[] args)
     {
-        CollegeTest test = new CollegeTest();
+        new CollegeTest();
     }
 }
