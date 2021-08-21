@@ -5,8 +5,8 @@
 using std::vector;
 
 void printMatrix (vector<vector<int>> arr);
-vector<vector<int>> flipHorizontally (vector<vector<int>> arr);
-vector<vector<int>> flipVertically (vector<vector<int>> arr);
+void flipHorizontally (vector<vector<int>> & arr);
+void flipVertically (vector<vector<int>> & arr);
 
 int main () 
 {
@@ -30,14 +30,16 @@ int main ()
     
 	printMatrix(arr);
     std::cout << "\n<---------------- Flip Horizontally ---------------->\n\n";
-    printMatrix(flipVertically(arr));
+    flipVertically(arr);
+    printMatrix(arr);
     std::cout << "\n<----------------- Flip Vertically ----------------->\n\n";
-	printMatrix(flipHorizontally(arr));
+	flipHorizontally(arr);
+    printMatrix(arr);
 
     return 0;
 }
 
-vector<vector<int>> flipHorizontally (vector<vector<int>> arr) 
+void flipHorizontally (vector<vector<int>> & arr) 
 {
 	vector<vector<int>> buffer (arr.size(), vector<int>(arr.size()));
 
@@ -48,11 +50,11 @@ vector<vector<int>> flipHorizontally (vector<vector<int>> arr)
             buffer[r][c] = arr[r][arr.size() - c - 1];
         }
     }
-    return buffer;
+    arr = buffer;
 	
 }
 
-vector<vector<int>> flipVertically (vector<vector<int>> arr) 
+void flipVertically (vector<vector<int>> & arr) 
 {
 	vector<vector<int>> buffer (arr.size(), vector<int>(arr.size()));
 
@@ -63,7 +65,7 @@ vector<vector<int>> flipVertically (vector<vector<int>> arr)
             buffer[r][c] = arr[arr.size() - r - 1][c];
         }
     }
-    return buffer;
+    arr = buffer;
 	
 }
 
