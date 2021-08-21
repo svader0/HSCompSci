@@ -4,7 +4,9 @@
 
 using std::vector;
 
-void printMatrix (vector<vector<int>> & arr);
+void printMatrix (vector<vector<int>> arr);
+vector<vector<int>> flipHorizontally (vector<vector<int>> arr);
+vector<vector<int>> flipVertically (vector<vector<int>> arr);
 
 int main () 
 {
@@ -25,19 +27,49 @@ int main ()
         }
     }
 
-    printMatrix(arr);
+    
+	printMatrix(arr);
+    std::cout << "\n<---------------- Flip Horizontally ---------------->\n\n";
+    printMatrix(flipVertically(arr));
+    std::cout << "\n<----------------- Flip Vertically ----------------->\n\n";
+	printMatrix(flipHorizontally(arr));
 
     return 0;
 }
 
-
-
-void printMatrix (vector<vector<int>> & arr) 
+vector<vector<int>> flipHorizontally (vector<vector<int>> arr) 
 {
-    /*
-        Simple method for print formatting... there's probably a library 
-        to do this but I don't feel like looking that up right now.
-    */
+	vector<vector<int>> buffer (arr.size(), vector<int>(arr.size()));
+
+    for (int r = 0; r < arr.size(); r++) 
+    {
+        for (int c = 0; c < arr.at(r).size(); c++) 
+        {
+            buffer[r][c] = arr[r][arr.size() - c - 1];
+        }
+    }
+    return buffer;
+	
+}
+
+vector<vector<int>> flipVertically (vector<vector<int>> arr) 
+{
+	vector<vector<int>> buffer (arr.size(), vector<int>(arr.size()));
+
+    for (int r = 0; r < arr.size(); r++) 
+    {
+        for (int c = 0; c < arr.at(r).size(); c++) 
+        {
+            buffer[r][c] = arr[arr.size() - r - 1][c];
+        }
+    }
+    return buffer;
+	
+}
+
+
+void printMatrix (vector<vector<int>> arr) 
+{
     for (int i = 0; i < arr.size() * 4; i++) {std::cout << "-";} // top bar
 
     std::cout << "-\n";
