@@ -62,15 +62,19 @@ void displayImage(vector<vector<int>> & img)
 
 void displayUpsideDown(vector<vector<int>> & img)
 {
-    vector<vector<int>> buffer = img;
-    for(int r = 0; r < img.size(); r++)
+    for(int r = img.size() - 1; r >= 0; r--)
     {
         for(int c = 0; c < img.at(r).size(); c++)
         {
-            buffer[r][c] = img[img.size() - r - 1][c];
+            if (img[r][c] == 1)
+                std::cout << "@ ";
+            if (img[r][c] == 2)
+                std::cout << "+ ";
+            if (img[r][c] == 3)
+                std::cout << "  ";
         }
+        std::cout << "\n";
     }
-    displayImage(buffer);
 }
 
 /* Precondition: array2D.length > 0 and array2D[0].length > 0
@@ -83,18 +87,18 @@ void enlarge(vector<vector<int>> & img)
 {
     for(int r = 0; r < img.size(); r++)
     {   
-        std::string buffer;
+        std::string line;
         for(int c = 0; c < img.at(r).size(); c++)
         {
             if (img[r][c] == 1)
-                buffer.append( "@ @ ");
+                line.append( "@ @ ");
             if (img[r][c] == 2)
-                buffer.append( "+ + ");
+                line.append( "+ + ");
             if (img[r][c] == 3)
-                buffer.append( "    ");
+                line.append( "    ");
         }
-        std::cout << buffer << "\n";
-        std::cout << buffer << "\n";
+        std::cout << line << "\n";
+        std::cout << line << "\n";
     }
 }
 
