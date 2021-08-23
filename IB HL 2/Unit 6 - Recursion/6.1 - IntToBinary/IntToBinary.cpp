@@ -4,19 +4,15 @@
 // obviously there's printf arguments to just simply display a number as its binary equivalent,
 // but completing the assignment with recursion is basically the whole point of the unit.
 
-std::string toBinary(int n)
+void toBinary(int n)
 {
-    int res = (n % 2);
-    std::string bin;
-    if (res == 0) 
-    {
-        return bin;
+    if (n == 0) {
+        std::cout << 0;
+        return;
     }
-    else
-    {
-        bin.append(std::to_string(res));
-        toBinary(res);
-    }
+
+    toBinary(n / 2);
+    std::cout << (n % 2);
 }
 
 int main() 
@@ -24,6 +20,6 @@ int main()
     int num;
     std::cout << "Enter a number --> ";
     std::cin >> num;
-    std::cout << "\n\nBinary = " << toBinary(num);
+    toBinary(num);
     return 0;
 }
