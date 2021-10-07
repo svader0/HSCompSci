@@ -43,12 +43,12 @@ public class Main {
 
 	public void linkedList3() 
 	{
-		LinkedList<Location>list = new LinkedList<>();
-		list.addLast(new Location(1,1));
-		list.addLast(new Location(2,2));
-		list.addLast(new Location(3,3));
-		list.addFirst(new Location(0,0));
-		Location loc = list.getFirst();
+		LinkedList<Position>list = new LinkedList<>();
+		list.addLast(new Position(1,1));
+		list.addLast(new Position(2,2));
+		list.addLast(new Position(3,3));
+		list.addFirst(new Position(0,0));
+		Position loc = list.getFirst();
 		loc.setX(100);
 		loc.setY(100);
 		while (!list.isEmpty()) 

@@ -1,11 +1,11 @@
-public class Location
+public class Position
 {
    // instance variables
    private int x;
    private int y;
             
    // constructor
-   public Location(int x, int y)
+   public Position(int x, int y)
    {
       this.x = x;
       this.y = y;
