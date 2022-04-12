@@ -366,3 +366,4 @@ FodyWeavers.xsd
 
 # Stuff I just don't want to be included:
 *.class
+.vscode/
