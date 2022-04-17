@@ -1,0 +1,16 @@
+# 4/15/2022
+
+print("My name is John Wayne.")
+print("My favorite color is blue.")
+print("My favorite animal is a dog.")
+print("My favorite food is pizza.")
+print("My favorite sport is basketball.")
+print("My favorite movie is Star Wars.")
+print("My favorite song is \"I Want It That Way\".")
+print("My favorite band is Nirvana.")
+print("My favorite book is \"The Hunger Games\".")
+print("My favorite website is \"www.google.com\".")
+print("My favorite number is \"7\".")
+print("My favorite letter is \"A\".")
+print("My favorite character is \"Batman\".")
+print("My favorite word is \"Hello\".")
