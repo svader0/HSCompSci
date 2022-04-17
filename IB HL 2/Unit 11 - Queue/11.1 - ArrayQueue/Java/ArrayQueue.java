@@ -1,5 +1,3 @@
-import java.util.EmptyStackException;
-
 public class ArrayQueue<E> implements Queue<E>
 {
     // constants
@@ -29,7 +27,6 @@ public class ArrayQueue<E> implements Queue<E>
         array[size++] = item;
     }
 
-    @SuppressWarnings({"unchecked"})
     public E dequeue()
     {
         E item = array[0];
