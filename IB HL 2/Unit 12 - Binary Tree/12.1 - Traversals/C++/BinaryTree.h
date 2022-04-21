@@ -27,7 +27,6 @@ public:
    void postOrderTraversal(Node* tree, std::vector<int>& list);
    std::string toString(Node* root, int level);
    std::string toString();
-
 };
 
 #endif
